@@ -29,6 +29,18 @@ namespace UnitTestProject
           
             Assert.AreEqual(ObjProg.CheckoutScenarioB(item_A_Quantity, item_B_Quantity, item_C_Quantity,item_D_Quantity), 370);
         }
+        [TestMethod]
+        public void CheckScenarioC()
+        {
+            int item_A_Quantity = 3;
+            int item_B_Quantity = 5;
+            int item_C_Quantity = 1;
+            int item_D_Quantity = 1;
+
+            var ObjProg = new MainProject.Program();
+
+            Assert.AreEqual(ObjProg.CheckoutScenarioC(item_A_Quantity, item_B_Quantity, item_C_Quantity, item_D_Quantity), 280);
+        }
 
 
     }

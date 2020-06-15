@@ -26,11 +26,9 @@ namespace MainProject
         {
             int promotionForA = 3;
             int promotionForB = 2;
-            int promotionForCAndD = 1;
             int total = 0;
-            int prmotionValue = 0;
-            int excludedFromPromotionValue = 0;
-
+            int excludedFromPromotionValue;
+            int prmotionValue;
             if (item_A_Quantity != 0)
             {
                 prmotionValue = item_A_Quantity / promotionForA;
@@ -45,7 +43,18 @@ namespace MainProject
             }
             if (item_C_Quantity != 0 && item_D_Quantity != 0)
             {
-
+                if(item_C_Quantity<item_D_Quantity)
+                {
+                    total += (item_C_Quantity * promotionValueForCAndD_Only)+ (item_D_Quantity - item_C_Quantity) * item_D_Value;
+                }
+                if (item_D_Quantity < item_C_Quantity)
+                {
+                    total += (item_D_Quantity * promotionValueForCAndD_Only) + (item_C_Quantity - item_D_Quantity) * item_C_Value;
+                }
+                if (item_D_Quantity == item_C_Quantity)
+                {
+                    total += item_D_Value * promotionValueForCAndD_Only;
+                }
             }
             else
             {
@@ -57,7 +66,11 @@ namespace MainProject
             return total;
         }
 
-       
+        public int CheckoutScenarioC(int item_A_Quantity, int item_B_Quantity, int item_C_Quantity, int item_D_Quantity)
+        {
+            throw new NotImplementedException();
+        }
+
         public int CheckoutScenarioA(int item_A_Quantity, int item_B_Quantity, int item_C_Quantity)
         {
             return (item_A_Quantity * item_A_Value) + (item_B_Quantity * item_B_Value) + (item_C_Quantity * item_C_Value);
