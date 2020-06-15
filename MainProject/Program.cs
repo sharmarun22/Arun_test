@@ -19,13 +19,32 @@ namespace MainProject
 
         }
 
-        public void CheckoutScenario1(int v1, int v2, int v3)
-        {
-            throw new NotImplementedException();
-        }
-        //public int CheckoutScenario1(int iteam_A_Quantity, int iteam_B_Quantity, int iteam_C_Quantity)
+        //private int AfterPromotionValue(int item_A_Quantity, int item_B_Quantity,int item_C_Quantity,int item_D_Quantity)
         //{
-        //    return (iteam_A_Quantity * item_A_Value) + (iteam_B_Quantity * item_B_Value) + (iteam_C_Quantity * item_C_Value);
+        //    int promotionForA = 3;
+        //    int promotionForB = 2;
+        //    int promotionForCAndD = 1;
+            
+        //    if (item_A_Quantity !=0)
+        //    {
+        //        int calculativeValue = item_A_Quantity / promotionForA;
+        //    }
+        //    if (item_B_Quantity != 0)
+        //    {
+        //    }
+        //    if (item_C_Quantity != 0 && item_D_Quantity!=0)
+        //    { 
+        //    }
+        //    return 0;
+        //}
+        public int CheckoutScenarioA(int item_A_Quantity, int item_B_Quantity, int item_C_Quantity)
+        {
+            return (item_A_Quantity * item_A_Value) + (item_B_Quantity * item_B_Value) + (item_C_Quantity * item_C_Value);
+        }
+
+        //public int CheckoutScenarioB(int item_A_Quantity, int item_B_Quantity, int item_C_Quantity)
+        //{
+        //    return (item_A_Quantity * item_A_Value) + (item_B_Quantity * item_B_Value) + (item_C_Quantity * item_C_Value);
         //}
 
     }

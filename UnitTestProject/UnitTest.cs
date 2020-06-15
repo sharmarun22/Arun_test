@@ -11,13 +11,20 @@ namespace UnitTestProject
         [TestMethod]
         public void CheckScenarioA()
         {
-            int iteam_A_Quantity = 1;
-            int iteam_B_Quantity = 1;
-            int iteam_C_Quantity = 1;
+            int item_A_Quantity = 1;
+            int item_B_Quantity = 1;
+            int item_C_Quantity = 1;
             var ObjProg = new MainProject.Program();
-            ObjProg.CheckoutScenario1(2, 1, 1);
-           //int totalValue = CheckoutScenario1(iteam_A_Quantity, iteam_B_Quantity, iteam_C_Quantity);
-
+            Assert.AreEqual(ObjProg.CheckoutScenarioA(item_A_Quantity, item_B_Quantity, item_C_Quantity), 100);
+        }
+        [TestMethod]
+        public void CheckScenarioB()
+        {
+            int item_A_Quantity = 1;
+            int item_B_Quantity = 1;
+            int item_C_Quantity = 1;
+            var ObjProg = new MainProject.Program();
+            Assert.AreEqual(ObjProg.CheckoutScenarioB(item_A_Quantity, item_B_Quantity, item_C_Quantity), 100);
         }
 
 
