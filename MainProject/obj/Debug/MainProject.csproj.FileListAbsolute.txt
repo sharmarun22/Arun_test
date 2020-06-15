@@ -9,3 +9,4 @@ C:\Users\arun.bp.kumar\Source\Repos\sharmarun22\Arun_test\MainProject\bin\Debug\
 C:\Users\arun.bp.kumar\Source\Repos\sharmarun22\Arun_test\MainProject\bin\Debug\MainProject.pdb
 C:\Users\arun.bp.kumar\Source\Repos\sharmarun22\Arun_test\MainProject\obj\Debug\MainProject.exe
 C:\Users\arun.bp.kumar\Source\Repos\sharmarun22\Arun_test\MainProject\obj\Debug\MainProject.pdb
+C:\Users\arun.bp.kumar\Source\Repos\sharmarun22\Arun_test\MainProject\obj\Debug\MainProject.csprojAssemblyReference.cache

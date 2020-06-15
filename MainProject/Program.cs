@@ -15,7 +15,7 @@ namespace MainProject
         int item_D_Value = 15;
         int promotionValueForA_eachOfThree = 130;
         int promotionValueForB_eachOfTwo = 45;
-        int promotionValueForCAndD_Only = 15;
+        int promotionValueForCAndD_Only = 30;
         public static void Main(string[] args)
         {
             
@@ -53,7 +53,7 @@ namespace MainProject
                 }
                 if (item_D_Quantity == item_C_Quantity)
                 {
-                    total += item_D_Value * promotionValueForCAndD_Only;
+                    total += item_D_Quantity * promotionValueForCAndD_Only;
                 }
             }
             else
@@ -68,7 +68,7 @@ namespace MainProject
 
         public int CheckoutScenarioC(int item_A_Quantity, int item_B_Quantity, int item_C_Quantity, int item_D_Quantity)
         {
-            throw new NotImplementedException();
+            return AfterPromotionValue(item_A_Quantity, item_B_Quantity, item_C_Quantity, item_D_Quantity);
         }
 
         public int CheckoutScenarioA(int item_A_Quantity, int item_B_Quantity, int item_C_Quantity)
