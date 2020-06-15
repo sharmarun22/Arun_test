@@ -9,19 +9,25 @@ namespace MainProject
 {
     public class Program
     {
-        int item_A_Value = 50;
-        int item_B_Value = 30;
-        int item_C_Value = 20;
-        int item_D_Value = 15;
-        int promotionValueForA_eachOfThree = 130;
-        int promotionValueForB_eachOfTwo = 45;
-        int promotionValueForCAndD_Only = 30;
+        #region 'Variable Declerations'
+        readonly int item_A_Value = 50;
+        readonly int item_B_Value = 30;
+        readonly int item_C_Value = 20;
+        readonly int item_D_Value = 15;
+        readonly int promotionValueForA_eachOfThree = 130;
+        readonly int promotionValueForB_eachOfTwo = 45;
+        readonly int promotionValueForCAndD_Only = 30;
+        #endregion
+
+        #region 'Main Method'
         public static void Main(string[] args)
         {
             
            
         }
+        #endregion
 
+        #region 'Generic Method to implement Promotions'
         private int AfterPromotionValue(int item_A_Quantity, int item_B_Quantity, int item_C_Quantity, int item_D_Quantity)
         {
             int promotionForA = 3;
@@ -66,6 +72,9 @@ namespace MainProject
             return total;
         }
 
+        #endregion
+
+        #region 'Scenarios implementation'
         public int CheckoutScenarioC(int item_A_Quantity, int item_B_Quantity, int item_C_Quantity, int item_D_Quantity)
         {
             return AfterPromotionValue(item_A_Quantity, item_B_Quantity, item_C_Quantity, item_D_Quantity);
@@ -80,8 +89,10 @@ namespace MainProject
         {
             return AfterPromotionValue(item_A_Quantity, item_B_Quantity, item_C_Quantity, item_D_Quantity);
         }
+        #endregion
+
 
     }
-   
+
 
 }
