@@ -1,0 +1,6 @@
+C:\Users\arun.bp.kumar\source\repos\test\UnitTestProject\MainProject\bin\Debug\MainProject.exe.config
+C:\Users\arun.bp.kumar\source\repos\test\UnitTestProject\MainProject\bin\Debug\MainProject.exe
+C:\Users\arun.bp.kumar\source\repos\test\UnitTestProject\MainProject\bin\Debug\MainProject.pdb
+C:\Users\arun.bp.kumar\source\repos\test\UnitTestProject\MainProject\obj\Debug\MainProject.exe
+C:\Users\arun.bp.kumar\source\repos\test\UnitTestProject\MainProject\obj\Debug\MainProject.pdb
+C:\Users\arun.bp.kumar\source\repos\test\UnitTestProject\MainProject\obj\Debug\MainProject.csprojAssemblyReference.cache
